@@ -27,7 +27,9 @@ performPrincipalFeatureAnalysis <- function(X, thresh, add_dim = 1){
   }
   
   #Apply PCA on correlation matrix
-  tmp_pca <- prcomp(x = X, center = T, scale. = T)
+  tmp_pca <- prcomp(x = X,
+                    center = T,
+                    scale. = T)
   A_q <- tmp_pca$rotation
   
   #Find sufficient number of factors
@@ -36,7 +38,9 @@ performPrincipalFeatureAnalysis <- function(X, thresh, add_dim = 1){
   
   #Cut desired number of columns form the rotation matrix and perform kmeans
   A_q <- A_q[, c(1:cutoff)]
-  tmpkm <- kmeans(A_q, centers = ncol(A_q) + add_dim, iter.max = 100)
+  tmpkm <- kmeans(A_q, 
+                  centers = ncol(A_q) + add_dim, 
+                  iter.max = 100)
   labels <- tmpkm$cluster
   centers <- tmpkm$centers
   
