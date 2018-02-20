@@ -8,6 +8,7 @@ Current projects:
 2. PFAImplementation.R is the implementation of Principle Feature Analysis algorithm proposed in Lu, Y., Cohen, I., Zhou, X. S., & Tian, Q. (2007)
 3. Sample Shiny application visualizing data of car prices. The data set used in this project was downloaded from: http://web.sgh.waw.pl/~atoroj/ In order to run the application use the following command in RStudio:
 ```{r}
+if (!require(shiny)) install.packages('shiny')
 runUrl("https://github.com/MDolinski/SampleRProjects/archive/master.tar.gz",
        subdir = "/SampleShinyApp/")
 ```
