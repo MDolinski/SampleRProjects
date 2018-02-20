@@ -9,6 +9,7 @@ Current projects:
 3. Sample Shiny application visualizing data of car prices. The data set used in this project was downloaded from: http://web.sgh.waw.pl/~atoroj/ In order to run the application use the following command in RStudio:
 ```{r}
 if (!require(shiny)) install.packages('shiny')
+require(shiny)
 runUrl("https://github.com/MDolinski/SampleRProjects/archive/master.tar.gz",
        subdir = "/SampleShinyApp/")
 ```
