@@ -3,7 +3,6 @@
 #install.packages('shiny')
 remove(list = ls())
 cat('\014')
-setwd("C:/Users/Mateusz/Desktop/SGH/Magisterskie/Wizualizacja/Projekt/Shiny")
 library(pacman)
 p_load(shiny, ggplot2)
 
