@@ -8,7 +8,7 @@ library(pacman)
 p_load(shiny, ggplot2)
 
 ##############################################################################
-#backend aplikacji - tworzenie wykresow
+#Backend aplikacji - tworzenie wykresow
 
 server <- function(input, output) {
   #Przygotowanie danych
