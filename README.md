@@ -13,3 +13,5 @@ require(shiny)
 runUrl("https://github.com/MDolinski/SampleRProjects/archive/master.tar.gz",
        subdir = "/SampleShinyApp/")
 ```
+
+4. AssociationAnalysis.Rmd: sample Rmarkdown document creating html_notebook. Unfortunately I was unable to render this notebook on github. In order to see the vizualization download the file and render the report in RStudio by pressing ctr+shift+k.
